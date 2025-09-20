@@ -1,0 +1,37 @@
+export io.github.qifan777.server.handicraft.booking.entity.HandicraftBooking
+
+input HandicraftBookingInput {
+    #allScalars(HandicraftBooking)
+    id
+    id(handicraft)
+}
+//input HandicraftBookingConfigInput {
+//    startTime
+//    endTime
+//    price
+//    peopleLimit
+//    locked
+//}
+//HandicraftBookingView {
+//    id
+//    startTime
+//    endTime
+//    price
+//    peopleLimit
+//    locked
+//    date
+//    bookingCount
+//    minutes: Int
+//}
+
+specification HandicraftBookingSpec {
+    #allScalars
+    ge(startTime)
+    le(startTime)
+    ge(endTime)
+    le(endTime)
+    ge(date)
+    le(date)
+    id(handicraft)
+    id(creator)
+}

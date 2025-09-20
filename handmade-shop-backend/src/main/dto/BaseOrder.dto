@@ -1,0 +1,13 @@
+export io.github.qifan777.server.order.entity.BaseOrder
+
+input BaseOrderInput {
+    #allScalars(BaseOrder)
+    id
+}
+
+specification BaseOrderSpec {
+    #allScalars
+    like/i(remark)
+    like/i(trackingNumber)
+    id(creator)
+}

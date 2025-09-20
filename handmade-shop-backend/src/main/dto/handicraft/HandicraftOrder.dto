@@ -1,0 +1,29 @@
+export io.github.qifan777.server.handicraft.order.entity.HandicraftOrder
+
+input HandicraftOrderInput {
+    id(handicraft)
+    items{
+        handicraftBookingId
+    }
+    flat(baseOrder) {
+        remark
+    }
+}
+
+specification HandicraftOrderSpec {
+    #allScalars
+    flat(creator) {
+        id as creatorId
+        phone
+    }
+    flat(handicraft) {
+        name
+    }
+    flat(baseOrder) {
+        like(remark)
+        flat(payment) {
+            ge(payTime)
+            le(payTime)
+        }
+    }
+}

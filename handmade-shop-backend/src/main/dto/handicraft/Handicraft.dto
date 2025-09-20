@@ -1,0 +1,17 @@
+export io.github.qifan777.server.handicraft.root.entity.Handicraft
+
+input HandicraftInput {
+    #allScalars(Handicraft)
+    id
+    periods
+    id(category)
+}
+
+specification HandicraftSpec {
+    #allScalars
+    like/i(name)
+    like/i(description)
+    like/i(tip)
+    id(creator)
+    id(category)
+}

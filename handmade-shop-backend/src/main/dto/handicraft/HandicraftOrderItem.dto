@@ -1,0 +1,15 @@
+export io.github.qifan777.server.handicraft.item.entity.HandicraftOrderItem
+
+input HandicraftOrderItemInput {
+    #allScalars(HandicraftOrderItem)
+    id
+    id(handicraftOrder)
+    id(handicraftBooking)
+}
+
+specification HandicraftOrderItemSpec {
+    #allScalars
+    id(handicraftOrder)
+    id(handicraftBooking)
+    id(creator)
+}

@@ -1,0 +1,39 @@
+export io.github.qifan777.server.product.order.entity.ProductOrder
+
+input ProductOrderInput {
+    #allScalars(ProductOrder)
+    id?
+    -status
+    flat(baseOrder) {
+        remark
+    }
+    addressId: String
+    items {
+        productId
+        productCount
+    }
+
+}
+specification ProductOrderSpec {
+    #allScalars
+    ge(createdTime)
+    le(createdTime)
+    ge(editedTime)
+    le(editedTime)
+    flat(creator) {
+        id as creatorId
+        phone
+    }
+    flat(items) {
+        flat(product) {
+            name
+        }
+    }
+    flat(baseOrder) {
+        like(remark)
+        flat(payment) {
+            ge(payTime)
+            le(payTime)
+        }
+    }
+}

@@ -13,6 +13,18 @@
 - **多端支持**：包含小程序端和管理后台
 - **用户友好界面**：简洁直观的操作体验
 
+## 项目预览
+
+<img src="./images/booking-list.png" width="400" alt="预约列表" />
+<img src="./images/booking.png" width="400" alt="预约详情" />
+<img src="./images/booking-order.png" width="400" alt="预约订单" />
+<img src="./images/product-list.png" width="400" alt="商品列表" />
+<img src="./images/product-details.png" width="400" alt="商品详情" />
+<img src="./images/product-order.png" width="400" alt="商品订单" />
+<img src="./images/cart.png" width="400" alt="购物车" />
+<img src="./images/user.png" width="400" alt="用户中心" />
+<img src="./images/vip.png" width="400" alt="会员中心" />
+
 ## 系统架构
 
 手工预约系统采用典型的前后端分离架构，整体架构设计清晰，各模块职责明确，便于维护和扩展。

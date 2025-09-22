@@ -16,7 +16,19 @@
     },
     "coverView": false,
     "showShadowRootInWxmlPanel": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
   },
   "compileType": "miniprogram",
   "srcMiniprogramRoot": "dist/",
@@ -30,5 +42,6 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx11d9bed0eb635a82"
+  "appid": "wx11d9bed0eb635a82",
+  "simulatorPluginLibVersion": {}
 }

@@ -2,7 +2,7 @@ spring:
   application:
     name: handmade
   profiles:
-    active: dev
+    active: dev,private
   servlet:
     multipart:
       max-file-size: 300MB
